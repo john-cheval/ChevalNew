@@ -23,7 +23,7 @@ const HomeSectionSix = ({ sectionData }) => {
         {title}
       </motion.h4>
       <motion.div
-        className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 mt-5 2xl:mt-8 gap-4 lg:gap-x-6 lg:gap-y-5"
+        className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 mt-5 2xl:mt-8 gap-4 lg:gap-x-6 lg:gap-y-5 auto-rows-fr "
         variants={listContainer}
         initial="hidden"
         whileInView="visible"

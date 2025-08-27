@@ -78,9 +78,8 @@ const HomeSectionThree = ({ title, description, countdown }) => {
         <div className="wrapper-padding">
           <div className="flex justify-between md:space-x-2 w-full flex-col md:flex-row">
             <article className="w-full md:w-1/2">
-              <h3 className="font-sora md:!tracking-[-2.4px] text-center md:text-left font-semibold text-3xl sm:text-4xl lg:text-5xl xl:text-[60px] text-main heading2 !leading-[131%]">
-                Building future-ready solutions with AI, blockchain, web, and
-                mobile
+              <h3 className=" md:!tracking-[-2.4px] text-center md:!text-left heading-1 heading2 !leading-[131%]">
+                {title}
               </h3>
               <p
                 dangerouslySetInnerHTML={{ __html: description }}
@@ -101,7 +100,7 @@ const HomeSectionThree = ({ title, description, countdown }) => {
                     ${index === 0 ? "sm:mr-[8%] md:mr-[10%] z-[30]" : index === 1 ? "sm:mr-[4%] md:mr-[5%] z-40" : "sm:mr-0 z-50 "}
                     ${index === 0 ? "mt-0" : "sm:mt-5 md:mt-0 g:space-y-0 space-y-0 sm:space-y-2"} lg:h-[225px] bg-white- rounded-[10px]  relative box`}
                 >
-                  <div className=" p-4">
+                  <div className=" px-7 py-8">
                     <div className="relative z-40 flex items-center sm:items-start lg:items-center justify-center lg:flex-row flex-row sm:flex-col space-x-4 sm:space-x-0 lg:space-x-6">
                       <p className="text-xl sm:text-2xl md:text-[36px] lg:text-[45px] font-sora tracking-tight font-semibold text-sec !leading-[121%] ">
                         {item?.total_count}+

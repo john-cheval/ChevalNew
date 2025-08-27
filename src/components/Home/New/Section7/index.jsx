@@ -29,7 +29,7 @@ const HomeSectionSeven = ({ sectionData }) => {
           </motion.h4>
 
           <motion.div
-            className="mt-7 space-y-7 "
+            className="mt-7 space-y-5 md:space-y-7 "
             variants={listContainer}
             initial="hidden"
             whileInView="visible"
@@ -41,14 +41,14 @@ const HomeSectionSeven = ({ sectionData }) => {
                 return (
                   <motion.div
                     key={index + 1}
-                    className="pb-7 border-b border-b-[#C9CEFF] flex items-center justify-between group"
+                    className="pb-5 md:pb-7 border-b border-b-[#C9CEFF] flex items-center justify-between group"
                     variants={fadeUp}
                   >
-                    <div className="space-y-2 w-[80%]">
+                    <div className=" space-y-2 md:space-y-4 w-[90%]">
                       <h6 className="heading-secondary">{item?.title}</h6>
                       {item?.description && (
                         <div
-                          className="main-desc"
+                          className="main-desc "
                           dangerouslySetInnerHTML={{
                             __html: item?.description,
                           }}
@@ -57,14 +57,14 @@ const HomeSectionSeven = ({ sectionData }) => {
                     </div>
                     <IoArrowForward
                       size={20}
-                      className="mt-2 group-hover:translate-x-2 transition-transform duration-300 ease-in-out text-[#B4B4B4] group-hover:text-sec"
+                      className="mt-3 md:mt-4 group-hover:translate-x-2 transition-transform duration-300 ease-in-out text-[#B4B4B4] group-hover:text-sec"
                     />
                   </motion.div>
                 );
               })}
           </motion.div>
         </div>
-        <div className="col-span-12 space-y-5 lg:col-span-6 xl:col-span-5   ">
+        <div className="col-span-12 space-y-5 lg:col-span-6 xl:col-span-5 mt-0 lg:mt-3   ">
           <Image
             src={image?.url}
             alt={title || "image"}
