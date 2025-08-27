@@ -6,6 +6,7 @@ import HomeSectionFour from "@/components/Home/New/Section4";
 import HomeSectionFive from "@/components/Home/New/Section5";
 import HomeSectionSix from "@/components/Home/New/Section6";
 import HomeSectionSeven from "@/components/Home/New/Section7";
+import Section1 from "@/components/Home/Section1";
 import Section11 from "@/components/Home/Section11";
 import Section5 from "@/components/Home/Section5";
 import Section8 from "@/components/Home/Section8";
@@ -35,7 +36,15 @@ const HomeNew = async () => {
 
   return (
     <>
-      <HomeSectionOne content={homeContent} />
+      <Section1
+        title={homeContent?.web_title}
+        subTitle={homeContent?.web_sub_title}
+        linkText={homeContent?.web_link_text}
+        link={homeContent?.web_link}
+        fullVideo={homeContent?.web_video}
+        shortVideo={homeContent?.web_video_short}
+      />
+      {/* <HomeSectionOne content={homeContent} /> */}
       <div className="bg-[#F6F6F4] relative z-50">
         <HomeSectionTwo clientsData={clients} />
         <HomeSectionThree
