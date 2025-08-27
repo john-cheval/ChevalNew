@@ -56,12 +56,12 @@ const HomeSectionFive = ({ sectionData }) => {
                           </p>
                         </div>
 
-                        <div className="pt-8 md:pt-10">
+                        <div className="pt-5 md:pt-10">
                           <h6 className="heading-secondary-2 min-h-[50px] md:min-h-[85px] 2xl:min-h-0">
                             {item?.title}
                           </h6>
                           <div
-                            className="main-desc  !text-black mt-2 min-h-[120px] sm:min-h-[100px] 2xl:min-h-0"
+                            className="main-desc  !text-black mt-2 min-h-[125px] sm:min-h-[100px] 2xl:min-h-0"
                             dangerouslySetInnerHTML={{
                               __html: item?.description,
                             }}
