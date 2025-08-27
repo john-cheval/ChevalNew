@@ -49,7 +49,7 @@ const HomeSectionTwo = ({ clientsData }) => {
     </div>
   ));
   return (
-    <div className=" pb-10 md:pb-0 md:pt-12 lg:pt-20 lg:pb-10 xl:pb-20 overflow-hidden">
+    <div className=" pb-10 md:pb-0 md:pt-12 lg:pt-20 lg:pb-10 xl:pb-20- overflow-hidden">
       <div ref={movingContainer} className="flex w-fit">
         {list}
         {/* {list} */}

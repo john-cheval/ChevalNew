@@ -62,12 +62,20 @@ const HomeSectionThree = ({ title, description, countdown }) => {
         y: yValue,
       })
       .to(pinnedCards[1], {
-        y: -1 * (pinnedCards[1].clientHeight * cardMultiplier * 1.05),
+        // y: -1 * (pinnedCards[1].clientHeight * cardMultiplier * 1.05),
+        y:
+          -1 *
+          (pinnedCards[1].clientHeight *
+            cardMultiplier *
+            (isMobile ? 0.9 : 1.05)),
       })
       .to(pinnedCards[2], {
-        y: -1 * (pinnedCards[2].clientHeight * cardMultiplier * 1.7),
+        // y: -1 * (pinnedCards[2].clientHeight * cardMultiplier * 1.7),
+        y:
+          -1 *
+          (pinnedCards[2].clientHeight * cardMultiplier * (isMobile ? 1 : 1.7)),
       });
-  }, []);
+  }, [isMobile]);
 
   return (
     <section
