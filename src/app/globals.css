@@ -1173,7 +1173,7 @@ video {
 }
 
 .heading-1 {
-  @apply font-sora font-medium text-main text-center sm:text-left text-3xl  sm:text-4xl lg:text-5xl xl:text-[54px] heading2 !leading-[120%];
+  @apply font-sora font-medium text-main text-center sm:text-left text-3xl  sm:text-4xl lg:text-[45px] xl:text-[50px] heading2 !leading-[120%];
 }
 .main-desc {
   @apply font-satoshi text-[15px] md:text-base text-[#5f5f5f] !leading-[154%] font-normal;
