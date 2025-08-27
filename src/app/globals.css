@@ -748,6 +748,12 @@ input:checked + label .descriptions {
   font-size: 16px;
   cursor: pointer;
 }
+.main-home-heading {
+  background: linear-gradient(90deg, #101763 14.78%, #d81100 84.71%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
 
 @media (max-width: 1500px) and (min-width: 800px) {
   .heading2 {
@@ -1135,12 +1141,15 @@ video {
     top: 250px !important;
   }
 } */
- .locationListService ul{width: 100%;
+.locationListService ul {
+  width: 100%;
   display: inline-block;
-  vertical-align: top;}
-.locationListService li{
+  vertical-align: top;
+}
+.locationListService li {
   width: 49%;
-  vertical-align: top; margin-bottom: 10px;
+  vertical-align: top;
+  margin-bottom: 10px;
   background-image: url(/arrow_right_red.svg);
   background-repeat: no-repeat;
   background-position: left 5px;
@@ -1150,8 +1159,83 @@ video {
   display: inline-block;
 }
 
-@media (max-width:600px){
-  .locationListService li{
+@media (max-width: 600px) {
+  .locationListService li {
     width: 100%;
   }
+}
+
+.main-home-heading-2 {
+  font-size: clamp(3rem, 25vw, 21.3125rem); /* Example values */
+}
+.wrapper-padding {
+  @apply px-5 sm:px-10 md:px-12;
+}
+
+.heading-1 {
+  @apply font-sora font-semibold text-main text-3xl text-center sm:text-left sm:text-4xl lg:text-5xl heading2 !leading-[120%];
+}
+.main-desc {
+  @apply font-sora text-[15px] md:text-base text-[#5f5f5f] !leading-[154%] font-normal;
+}
+.heading-secondary {
+  @apply text-main font-sora font-medium leading-normal text-lg sm:text-xl md:text-[22px] lg:text-[25px];
+}
+.heading-secondary-2 {
+  @apply text-main font-sora font-medium leading-normal text-lg sm:text-xl md:text-[20px] xl:text-[25px];
+}
+.background-overlay-home {
+  border-radius: 10px;
+  border: 1px solid #c9ceff;
+  background: rgba(255, 255, 255, 0.49);
+  backdrop-filter: blur(3.799999952316284px);
+}
+.box::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  border: 1px solid #c9ceff;
+  background: rgba(255, 255, 255, 0.49);
+  backdrop-filter: blur(3.799999952316284px);
+}
+.box::before {
+  content: "";
+  position: absolute;
+  left: 12px;
+  top: 12px;
+  right: 12px;
+  bottom: 12px;
+
+  border-radius: 10px;
+  border-radius: 10px;
+  background: linear-gradient(180deg, #c9ceff 0%, #fff 100%);
+  backdrop-filter: blur(3.799999952316284px);
+}
+
+.text-stack-card {
+  border-radius: 10px;
+  border: 1px solid #c9ceff;
+  background: rgba(255, 255, 255, 0.34);
+  backdrop-filter: blur(6.050000190734863px);
+}
+.our-tech-stack p {
+  background: linear-gradient(90deg, #d81100 0%, #101763 77.24%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-style: normal;
+  line-height: 176%;
+  @apply font-sora font-normal text-[15px] md:text-base;
+}
+
+.home-services-overlay h3 {
+  @apply text-xl sm:text-2xl md:text-3xl text-center md:text-left lg:text-4xl text-main font-sora font-medium leading-[143%];
+}
+
+.home-services-overlay p {
+  @apply font-sora text-[15px] md:text-base text-center md:text-left text-black !leading-[154%] font-normal mt-3;
 }

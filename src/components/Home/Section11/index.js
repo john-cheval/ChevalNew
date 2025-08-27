@@ -137,7 +137,7 @@ function Section11({ data, title, isLocation = false }) {
       <div className="relative max-w-screen px-5 sm:px-10 md:px-12 sm:py-0 py-10 w-full">
         <div className="w-full grid h-fit grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 grid-flow-row">
           {/* Header Section */}
-          <div className="flex space-y-5 sm:space-y-10 sm:items-start items-center sm:justify-start justify-center flex-col col-span-1 h-fit">
+          <div className="flex space-y-5 sm:space-y-10 sm:items-start items-center sm:justify-start justify-center flex-col col-span-1 h-fit mb-5 sm:mb-0">
             {title ? (
               <h4
                 className="font-sora font-semibold text-main text-3xl text-center sm:text-left sm:text-4xl lg:text-4xl heading2"

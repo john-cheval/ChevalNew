@@ -78,6 +78,7 @@ module.exports = {
           "linear-gradient(238deg, #E7E7E7 -10.07%, #FFF 57.82%)",
         "ads-portfolio-grad":
           "linear-gradient(180deg, rgba(248, 248, 248, 0.00) 0%, #F8F8F8 100%)",
+          'home-card-gradient':'linear-gradient(180deg, #C9CEFF 0%, #FFF 100%)'
       },
     },
   },
