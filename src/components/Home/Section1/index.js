@@ -86,7 +86,6 @@ function Section1({ title, link, fullVideo, shortVideo, subTitle, linkText }) {
         scrub: true,
         start: "top top",
         end: "+=150%",
-        // markers: true,
         onUpdate: (self) => {
           const progress = Math.round(self.progress * 100);
 
@@ -319,7 +318,7 @@ function Section1({ title, link, fullVideo, shortVideo, subTitle, linkText }) {
           {!isMobile && (
             <div
               id="playButton"
-              className="absolute inset-0 w-full h-full flex items-center justify-center z-[11115]"
+              className="absolute inset-0 w-full h-full flex items-center justify-center z-[11115] opacity-0 translate-y-24 transition-none"
               onClick={handleFullscreen}
               // aria-label="Play fullscreen video"
               role="button"
@@ -427,7 +426,7 @@ function Section1({ title, link, fullVideo, shortVideo, subTitle, linkText }) {
 
         {isFullscreen && (
           <div
-            className="fixed top-0 left-0 w-screen h-screen bg-white/95 z-[10000] flex flex-col items-center justify-center"
+            className="fixed top-0 left-0 w-screen h-screen bg-white/95 z-[11119] flex flex-col items-center justify-center"
             onClick={handleExitFullscreen}
           >
             <video
