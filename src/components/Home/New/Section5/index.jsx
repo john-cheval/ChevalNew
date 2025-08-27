@@ -30,7 +30,7 @@ const HomeSectionFive = ({ sectionData }) => {
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, amount: 0.2 }}
-          className="col-span-12 lg:col-span-8 xl:col-span-7 grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 gap-4 "
+          className="col-span-12 lg:col-span-8 xl:col-span-7 grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 gap-4 mt-0 lg:mt-3 auto-rows-fr "
         >
           {section_list &&
             section_list?.length > 0 &&

@@ -81,11 +81,12 @@ function Section1({ title, link, fullVideo, shortVideo, subTitle, linkText }) {
         ease: "none",
       },
       scrollTrigger: {
-        trigger: "#section1",
+        trigger: "#mainSection1",
         pin: true,
         scrub: true,
         start: "top top",
         end: "+=150%",
+        // markers: true,
         onUpdate: (self) => {
           const progress = Math.round(self.progress * 100);
 

@@ -7,7 +7,7 @@ const HomeSectionFour = ({ sectionData }) => {
   const { title, description, section_list } = sectionData;
   return (
     <section className="wrapper-padding">
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-y-5 lg:gap-x-5">
+      <div className="grid grid-cols-12 gap-y-5 lg:gap-x-5">
         <motion.h4
           initial={{
             opacity: 0,
@@ -19,7 +19,7 @@ const HomeSectionFour = ({ sectionData }) => {
           }}
           transition={{ duration: 0.6, ease: "easeOut" }}
           viewport={{ once: true, amount: 0.2 }}
-          className="heading-1 !text-center lg:!text-left"
+          className="heading-1 !text-center lg:!text-left col-span-12 lg:col-span-5"
         >
           {title}
         </motion.h4>
@@ -34,14 +34,14 @@ const HomeSectionFour = ({ sectionData }) => {
           }}
           transition={{ duration: 0.6, ease: "easeOut" }}
           viewport={{ once: true, amount: 0.2, delay: 0.3 }}
-          className="main-desc !text-center lg:!text-left"
+          className="main-desc !text-center lg:!text-left col-span-12 lg:col-span-7 mt-0 lg:mt-3"
           dangerouslySetInnerHTML={{ __html: description }}
           variants={fadeUp}
         />
       </div>
 
       <motion.div
-        className="grid grid-cols-1 lg:grid-cols-2 gap-x-5 lg:gap-x-10 mt-10 lg:mt-14"
+        className="grid grid-cols-1 lg:grid-cols-2 gap-x-5 lg:gap-x-10 mt-10 lg:mt-14 "
         variants={listContainer}
         initial="hidden"
         whileInView="visible"
@@ -73,12 +73,12 @@ const HomeSectionFour = ({ sectionData }) => {
                 </div>
 
                 <div
-                  className={`border-b border-b-[#D0D0D0] py-5 md:py-7 w-full  ${index === 0 ? "border-t border-t-[#D0D0D0]" : ""} 
+                  className={`border-b border-b-[#D0D0D0] py-5 md:pt-7 w-full  ${index === 0 ? "border-t border-t-[#D0D0D0]" : ""} 
                   ${index === 1 ? "border-t-0 md:border-t border-t-transparent md:border-t-[#D0D0D0]" : ""} `}
                 >
                   <h5 className="heading-secondary">{item?.title}</h5>
                   <div
-                    className="main-desc"
+                    className="main-desc mt-2 md:mt-3 lg:min-h-[78px] xl:min-h-0  md:pb-7"
                     dangerouslySetInnerHTML={{ __html: item?.description }}
                   />
                 </div>
