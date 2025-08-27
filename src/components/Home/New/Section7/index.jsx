@@ -44,7 +44,7 @@ const HomeSectionSeven = ({ sectionData }) => {
                     className="pb-5 md:pb-7 border-b border-b-[#C9CEFF] flex items-center justify-between group"
                     variants={fadeUp}
                   >
-                    <div className=" space-y-2 md:space-y-4 w-[90%]">
+                    <div className=" space-y-2 md:space-y-4 w-[80%]">
                       <h6 className="heading-secondary">{item?.title}</h6>
                       {item?.description && (
                         <div

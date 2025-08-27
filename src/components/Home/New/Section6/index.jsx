@@ -40,7 +40,7 @@ const HomeSectionSix = ({ sectionData }) => {
               >
                 <p className="heading-secondary !text-black">{item?.title}</p>
 
-                <div className="flex gap-y-4 gap-x-6 flex-wrap mt-5 items-center">
+                <div className="flex gap-y-6 gap-x-6 flex-wrap mt-5 items-center">
                   {item?.image_gallery &&
                     item?.image_gallery?.length > 0 &&
                     item?.image_gallery?.map((img, index) => (
@@ -50,7 +50,7 @@ const HomeSectionSix = ({ sectionData }) => {
                         alt={img?.title || "image"}
                         width={100}
                         height={33}
-                        className="w-auto max-h-[45px] h-full object-cover"
+                        className="w-auto max-h-8 h-full object-cover"
                       />
                     ))}
 

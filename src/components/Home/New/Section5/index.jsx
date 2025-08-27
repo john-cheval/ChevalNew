@@ -40,7 +40,7 @@ const HomeSectionFive = ({ sectionData }) => {
                   <div className="relative">
                     {" "}
                     <div className="rounded-[10px] relative box">
-                      <div className="relative z-50 px-4 sm:px-6 py-4 sm:py-5 ">
+                      <div className="relative z-50 px-4 sm:px-8 py-4 sm:py-8 ">
                         <div className="bg-white w-fit px-5 py-1 rounded-3xl">
                           <p
                             className="text-[14px] font-bold !leading-[176%] font-sora inline-block "
@@ -57,7 +57,7 @@ const HomeSectionFive = ({ sectionData }) => {
                         </div>
 
                         <div className="pt-5 md:pt-10">
-                          <h6 className="heading-secondary-2 min-h-[50px] md:min-h-[85px] 2xl:min-h-0">
+                          <h6 className="heading-secondary-2 min-h-[50px] md:min-h-[85px] ">
                             {item?.title}
                           </h6>
                           <div
