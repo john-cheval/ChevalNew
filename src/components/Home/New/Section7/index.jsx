@@ -89,7 +89,7 @@ const HomeSectionSeven = ({ sectionData }) => {
             />
             <div className="absolute bottom-[8%] sm:bottom-[10%] left-0 md:left-16 flex justify-center w-full md:justify-start">
               <Link
-                href={"/"}
+                href={"/contact-us"}
                 className="text-white text-[15px] md:text-base font-medium leading-[154%] bg-sec rounded-[10px] py-3 md:py-4 px-5 flex items-center group transition-all duration-300 ease-in-out border-sec hover:text-main hover:bg-transparent border hover:border-main mt-4 gap-x-2 w-fit"
               >
                 Lets Build Together{" "}
