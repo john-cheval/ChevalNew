@@ -7,7 +7,7 @@ import ScrollTrigger from "gsap/dist/ScrollTrigger";
 import { useGSAP } from "@gsap/react";
 import ChildrenReveal from "@/util/ChildrenReveal";
 import { disableImageOptimization } from "@/util/constants";
-function Section8({ data, split }) {
+function Section8({ data, split, isNew = false }) {
   const firstSlider = useRef(null);
   const secondSlider = useRef(null);
   const slider1 = useRef(null);
@@ -52,7 +52,7 @@ function Section8({ data, split }) {
         x={0}
         y={20}
         start={"top 60%"}
-        styling="w-full relative sliderContainer flex items-center justify-center overflow-x-hidden space-y-8 py-12 sm:py-32 md:py-36 h-fit flex-col"
+        styling={`w-full relative sliderContainer flex items-center justify-center overflow-x-hidden space-y-8 ${isNew ? "py-12 md:pb-20 lg:pb-28 xl:pb-36" : "py-12 sm:py-32 md:py-36"} h-fit flex-col`}
       >
         <div ref={slider1} className="relative whitespace-nowrap">
           <div

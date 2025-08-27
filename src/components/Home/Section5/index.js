@@ -11,7 +11,7 @@ import Buttons from "@/components/Buttons";
 import WorkMobile from "./WorkMobile";
 import { disableImageOptimization } from "@/util/constants";
 
-function Section5({ data }) {
+function Section5({ data, isNew = false }) {
   const router = useRouter();
   const [activeCard, setActiveCard] = useState(null);
   const [isScrolling, setIsScrolling] = useState(false);
@@ -73,7 +73,7 @@ function Section5({ data }) {
           zIndex:
             activeCard === index ? index + 100 : index + 10 + position * 20,
         }}
-        className="w-full h-[550px] md:h-[550px] mt-5 sm:mt-0 relative sm:bg-transparent bg-[#F6F6F4] rounded-[30px] overflow-hidden"
+        className={`w-full h-[550px] md:h-[550px] mt-5 sm:mt-0 relative sm:bg-transparent ${isNew ? "bg-white" : "bg-[#f6f6f6]"}  rounded-[30px] overflow-hidden`}
       >
         <div className="sm:h-full w-full relative h-1/2 sm:absolute sm:top-0 sm:right-0 object-cover">
           {isVideo(data[key]?.home_image) ? (
@@ -164,7 +164,7 @@ function Section5({ data }) {
       <div
         // aria-labelledby="worksText"
         id="pinnedWorkSection"
-        className="relative hidden md:block w-screen h-[580px] md:h-[750px] bg-[#F6F6F4] overflow-visible"
+        className={`relative hidden md:block w-screen h-[580px] md:h-[750px] ${isNew ? "bg-white" : "bg-[#f6f6f6]"}  overflow-visible`}
       >
         {/* <div className=" w-full-- h-full-- flex items-center justify-center pointer-events-none z-0">
           <p
