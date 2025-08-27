@@ -1,15 +1,15 @@
 import HomeBlogsSection from "@/components/Home/New/Blogs";
-import HomeSectionOne from "@/components/Home/New/Section1";
+// import HomeSectionOne from "@/components/Home/New/Section1";
 import HomeSectionTwo from "@/components/Home/New/Section2";
 import HomeSectionThree from "@/components/Home/New/Section3";
 import HomeSectionFour from "@/components/Home/New/Section4";
 import HomeSectionFive from "@/components/Home/New/Section5";
 import HomeSectionSix from "@/components/Home/New/Section6";
 import HomeSectionSeven from "@/components/Home/New/Section7";
+import Section1 from "@/components/Home/Section1";
 import Section11 from "@/components/Home/Section11";
 import Section5 from "@/components/Home/Section5";
 import Section8 from "@/components/Home/Section8";
-import Section9 from "@/components/Home/Section9";
 import { fetchData } from "@/server/getHomePageData";
 import { baseUrl } from "@/util/baseUrl";
 import React from "react";
@@ -35,7 +35,15 @@ const HomeNew = async () => {
 
   return (
     <>
-      <HomeSectionOne content={homeContent} />
+      <Section1
+        title={homeContent?.web_title}
+        subTitle={homeContent?.web_sub_title}
+        linkText={homeContent?.web_link_text}
+        link={homeContent?.web_link}
+        fullVideo={homeContent?.web_video}
+        shortVideo={homeContent?.web_video_short}
+      />
+      {/* <HomeSectionOne content={homeContent} /> */}
       <div className="bg-[#F6F6F4] relative z-50">
         <HomeSectionTwo clientsData={clients} />
         <HomeSectionThree
