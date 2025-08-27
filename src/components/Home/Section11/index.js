@@ -284,6 +284,7 @@ function Section11({ data, title, isLocation = false }) {
                     playsInline
                     loop
                     id="video"
+                    muted
                     controlsList="nodownload"
                     className="w-full h-full absolute rounded-3xl object-cover cursor-pointer"
                     ref={videoRefs.two}
@@ -351,6 +352,7 @@ function Section11({ data, title, isLocation = false }) {
                     playsInline
                     loop
                     id="video"
+                    muted
                     controlsList="nodownload"
                     className="w-full h-full absolute rounded-3xl cursor-pointer object-cover overflow-hidden"
                     onClick={() => openModal(1)}

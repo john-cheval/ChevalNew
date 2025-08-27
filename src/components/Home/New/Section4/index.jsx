@@ -76,10 +76,7 @@ const HomeSectionFour = ({ sectionData }) => {
                   className={`border-b border-b-[#D0D0D0] py-5 md:py-7 w-full  ${index === 0 ? "border-t border-t-[#D0D0D0]" : ""} 
                   ${index === 1 ? "border-t-0 md:border-t border-t-transparent md:border-t-[#D0D0D0]" : ""} `}
                 >
-                  <h5 className="heading-secondary">
-                    {item?.title}
-                    {index}
-                  </h5>
+                  <h5 className="heading-secondary">{item?.title}</h5>
                   <div
                     className="main-desc"
                     dangerouslySetInnerHTML={{ __html: item?.description }}

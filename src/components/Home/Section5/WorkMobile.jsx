@@ -66,7 +66,7 @@ const WorkMobile = ({ data }) => {
 
         <div
           onClick={() => router.push(`/projects/${data[key]?.post_name}`)}
-          className={`w-full md:hidden h-fit pb-6 border-b group ${data[key]?.ID === 2590 ? "border-b-0" : "border-b"} cursor-pointer border-black border-dotted flex items-center justify-center`}
+          className={`w-full md:hidden h-fit pb-6 group cursor-pointer   flex items-center justify-center`}
         >
           <DarkButton
             link={`/projects/${data[key]?.post_name}`}
