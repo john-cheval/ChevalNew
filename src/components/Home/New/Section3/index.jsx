@@ -72,7 +72,7 @@ const HomeSectionThree = ({ title, description, countdown }) => {
   return (
     <section
       id="mainSection2"
-      className="relative w-screen h-fit pt-10 md:pt-12 md:pb-16"
+      className="relative w-screen h-fit pt-10- md:pt-12 md:pb-16"
     >
       <div id="pinnedSection" className="relative w-full">
         <div className="wrapper-padding">
